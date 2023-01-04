@@ -1,6 +1,7 @@
 import React from 'react';
 import styles from "./App.module.css"
 import { Counter } from './components/Counter';
+import { TodoList } from './components/TodoList';
 import UserList from './components/UserList';
 
 const App:React.FC =()=>{
@@ -13,6 +14,8 @@ const App:React.FC =()=>{
       <div>Test</div>
       <UserList/>
      <Counter />
+     <hr></hr>
+     <TodoList/>
     </div>
    
    
