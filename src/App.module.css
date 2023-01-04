@@ -1,0 +1,10 @@
+.btn {
+    background-color: chocolate ;
+    padding: 5px;
+    border-radius: 5px;
+    margin: 5px;
+}
+.btnblock{
+    text-align: center;
+    width: 100%;
+}
