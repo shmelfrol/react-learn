@@ -1,17 +1,17 @@
-import { useDispatch } from "react-redux"
+
+import { useActions } from "../hooks/useActions"
 import { useTypedSelector } from "../hooks/useTypedSelector"
-import { Add, Sub } from "../store/action-creators/counter"
+
 
 export function Counter(){
-const dispatch = useDispatch()
 const {points} = useTypedSelector(state=>state.counter)
-
+const {Add, Sub} = useActions()
 const addHandler = ()=>{
-dispatch(Add())
+    Add()
 }
 
 const subHandler = ()=>{
-   dispatch(Sub())
+   Sub()
 }
 return(
     <div>
